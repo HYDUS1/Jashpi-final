@@ -1,0 +1,38 @@
+name: Build APK
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Unzip project
+        run: unzip -q Jashpi-AI.zip
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v5
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - name: Build debug APK
+        env:
+          JASHPI_RELAY: ${{ vars.JASHPI_RELAY }}
+        run: gradle -p Jashpi-AI :app:assembleDebug --stacktrace
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Jashpi-AI-apk
+          path: Jashpi-AI/app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
