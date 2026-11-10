@@ -1,38 +1,45 @@
 # JASHPI AI - Emergency AI That Acts When You Can't
 
-**Powered by Google Gemini API | Built in Kotlin | Server on Render**
+**Powered by Google Gemini API | Built in Kotlin | Server Hosted on Render**
 
-India me emergency me log ghabra ke bhool jate hai kya karna hai. Jashpi AI Hindi, Hinglish, English me baat karta hai aur jab tu bol nahi payega, tab bhi teri madad karega.
+In India, during an emergency, people panic and forget what to do. They cannot type, cannot call, and cannot explain.
 
-### Why Jashpi is Different?
+Jashpi AI solves this problem. It understands Hindi, Hinglish, and English. It talks like a friend and guides step-by-step for CPR, Heart Attack, Snake Bite, Burns, Choking, and Dizziness.
 
-- **Shake Phone 5 Times = SOS**
-- **Fall Detection = Auto SOS**
-- **Say "Bachao / Madad / Hello Jashpi" = Voice SOS**
-- **Live Location to Family via Telegram & WhatsApp**
-- **AI Guide:** CPR, Heart Attack, Snake Bite, Burns, Choking, Chhakkar - Step by Step in Hindi
+### What Makes Jashpi Different?
+
+- Shake Phone 5 Times = Auto SOS
+- Fall Detection = Auto SOS
+- Say "Bachao / Madad / Hello Jashpi" = Voice SOS
+- Live Location Sent to Family via Telegram & WhatsApp
+- AI First-Aid Guide in Hindi / Hinglish
+- Safe Walk, Fake Call, and Nearby Help
 
 ### Secure BYOK Architecture
 
-No API key is hardcoded in the APK. 
-- Server is hosted on Render for SOS + Telegram Bot
-- Each user adds their OWN Gemini API Key inside the app
-- If user has no key, app gives direct link to get FREE key from Google AI Studio
-- This makes app 100% free to scale, private, and no key leak
+No API key is hardcoded in the APK.
 
-> Note: Hosted on Render Free Tier, first request may take 30-40 sec to wake up server. Please wait once.
+- Server is hosted on Render for SOS and Telegram Bot
+- Each user adds their OWN Gemini API Key inside the app
+- If the user has no key, the app provides a direct link to get a FREE key from Google AI Studio
+- This makes the app 100% free to scale, private, and safe from key leaks
+
+> Note: Hosted on Render Free Tier. The first request may take 30-40 seconds to wake up the server. Please wait once.
 
 ### Features
-- Chat - JASHPI AI
+
+- Chat - JASHPI AI Assistant
 - Guide - Emergency First-Aid
-- Tools - Safe Walk, Fake Call, Nazdeeki Madad, Live Location
+- Tools - Safe Walk, Fake Call, Nearby Help, Live Location
 - Log - Emergency Contacts, Telegram Alerts
-- Settings - Voice Trigger, Shake SOS, Fall Detection, Cough SOS, Language
+- Settings - Voice Trigger, Shake SOS, Fall Detection, Language
 
 ### Download
-Go to Releases -> Download Latest APK
+
+Go to Releases and download the latest APK.
 
 ### Built With
-Kotlin, Gemini API, Render, Telegram Bot API
 
-Made in Bihar, India - For India
+Kotlin, Google Gemini API, Render, Telegram Bot API
+
+Built in Bihar, India - For India.
