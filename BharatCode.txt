@@ -1,0 +1,3 @@
+Jashpi AI - Emergency AI
+Built by HYDUS1
+Kotlin + Gemini API + Render
